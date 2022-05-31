@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTS-8" />
+    <link rel="stylesheet" href="CSS/ExternalStyle.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    
+
+     <img src="contactus.png" class="center" style="width:30%; ">
+
+    <form class="modal-content ">
+        <div class="rgba container">
+        <b>Name:</b>
+        <input type="text" placeholder="Enter Your Name" name="FullName"><br>
+        </br>
+        <b>E-mail:</b> 
+        <input type="text" placeholder="Enter Your Email" name="Email"><br>
+        </br>
+        <b>Select Type Problem:</b>
+        <select name="Type problem">
+            <option value="..select..">select</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Proposal">Proposal</option>
+            <option value="Other">Other</option>
+        </select>
+        </br>
+        </br>
+        <fieldset>
+            <legend><em><b>Message</b></em></legend>
+            <b>title:</b> 
+            <input type="text" placeholder="Enter Title Of Your Message" name="problemtitle"><br>
+            <br>
+            <label><b>Write Message:</b> 
+                </br>
+                <textarea name="txtTiebreaker" rows="20" cols="50" placeholder="Write Your Message Here"></textarea>
+            </label>
+        </fieldset>
+        </br>
+        <div class="modal-button">
+            <input type="Submit" value="Submit">
+            <input type="button" value="Home Page" onclick="location.href = 'homepage.html';">
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>

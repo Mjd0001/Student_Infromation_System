@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/ExternalStyle.css">
+
+<script>
+          function validate() {
+              var username = document.getElementById("uname").value;
+              var password = document.getElementById("psw").value;
+              if (username == "admin" && password == "admin") {
+                  window.location.replace("homepage.html")
+                  
+              }else{
+                  window.alert("User Name Or Password is wrong!.");
+                  
+              }
+          } 
+  </script>
+<style>
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+</style>
+</head>
+
+
+<body>
+  <h1 style="margin-block-end:auto;margin-block-start:auto;"> Student Information System </h1>
+  <form class="modal-content animate">
+    <div style="text-align:center;">
+      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+
+
+      <label for="uname"><b>Username</b></label>
+      <input  type="text" placeholder="Enter Username" id="uname" required>
+
+      <label for="psw"><b>Password</b></label> 
+      <input  type="password" placeholder="Enter Password" id="psw" required>
+       
+      <button style="width:99%" type="submit" 
+      onclick="validate()" >Login</button>
+
+
+
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+
+
+  </form>
+</body>
+</html>
